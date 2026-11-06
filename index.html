@@ -4,72 +4,105 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#101016">
-<meta name="description" content="DJ Ray — aluguel de som, iluminação e serviços de DJ para festas e eventos.">
+<meta name="description" content="DJ Ray — aluguel de som, iluminação e serviços de DJ para festas e eventos em Ubá-MG.">
 <title>DJ Ray | Som, Luz e Experiência</title>
+
+<meta property="og:title" content="DJ Ray | Som, Luz e Experiência">
+<meta property="og:description" content="Aluguel de som, iluminação e DJ para festas, casamentos e eventos corporativos em Ubá-MG.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://thson.com.br/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="http://thson.com.br/">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"DJ Ray",
+  "telephone":"+32999175329",
+  "address":{"@type":"PostalAddress","addressLocality":"Ubá","addressRegion":"MG","addressCountry":"BR"},
+  "url":"http://thson.com.br/",
+  "sameAs":["https://www.instagram.com/djraysom/"],
+  "priceRange":"$$"
+}
+</script>
+
 <style>
 :root{
- --bg:#03050c;--surface:#080d1c;--surface2:#0b1530;--line:#123a80;
- --text:#f8fbff;--muted:#b8c9e8;--gold:#168bff;--gold2:#005dff;
- --green:#19d875;--pink:#168bff;--cyan:#29cfff;--violet:#477dff;
- --radius:22px;--shadow:0 18px 45px #0004
+  --bg:#03050c;--surface:#080d1c;--surface2:#0b1530;--line:#123a80;
+  --text:#f8fbff;--muted:#b8c9e8;
+  --primary:#168bff;--primary-dark:#005dff;--primary-light:#29cfff;
+  --accent:#ffe68b;--green:#19d875;--pink:#ff438e;--violet:#ad7aff;
+  --radius:22px;--shadow:0 18px 45px #0004;
+  --focus:0 0 0 3px #29cfff88;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:radial-gradient(ellipse at 12% 0%,#062d78 0,transparent 32%),radial-gradient(ellipse at 90% 45%,#001b55 0,transparent 28%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;padding:0 16px 48px}
-button,a,input,textarea{font:inherit}
+button,a,input,textarea,select{font:inherit}
 a{color:inherit;text-decoration:none}
+:focus-visible{outline:none;box-shadow:var(--focus);border-radius:8px}
+
 .container{width:min(100%,790px);margin:0 auto}
 .topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:22px 0 18px;border-bottom:1px solid #ffffff13;margin-bottom:28px}
 .brand{display:flex;align-items:center;gap:11px;font-size:1.08rem;font-weight:900;letter-spacing:1.4px}
-.brand-mark{width:43px;height:43px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#29cfff,#075dff);color:#1a1606;box-shadow:0 8px 25px #168bff38}
-.brand-mark svg{width:25px;height:25px}.brand-logo{width:52px;height:52px;object-fit:contain;display:block}.brand-label{font-size:1.08rem;font-weight:900;letter-spacing:1.4px}.brand-label em{font-style:normal;color:var(--cyan)}
-.brand em{font-style:normal;color:var(--cyan)}
+.brand-logo{width:52px;height:52px;object-fit:contain;display:block}
+.brand-label{font-size:1.08rem;font-weight:900;letter-spacing:1.4px}
+.brand-label em{font-style:normal;color:var(--primary-light)}
 .top-tag{font-size:.76rem;color:var(--muted);letter-spacing:1.1px;text-transform:uppercase}
 .hero{text-align:center;padding:15px 0 30px}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #168bff70;border-radius:99px;padding:8px 13px;color:var(--cyan);font-size:.76rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;background:#168bff12}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #168bff70;border-radius:99px;padding:8px 13px;color:var(--primary-light);font-size:.76rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;background:#168bff12}
 .eyebrow svg{width:16px;height:16px}
 h1{font-size:clamp(2rem,7vw,3.55rem);line-height:1.06;letter-spacing:-1.7px;margin:19px 0 13px}
-h1 span{background:linear-gradient(100deg,#ffe68b,var(--gold),#f3a6ff);background-clip:text;-webkit-background-clip:text;color:transparent}
+h1 span{background:linear-gradient(100deg,#ffe68b,var(--primary),#f3a6ff);background-clip:text;-webkit-background-clip:text;color:transparent}
 .intro{max-width:590px;margin:0 auto;color:var(--muted);font-size:1rem;line-height:1.7}
-.hint{display:flex;justify-content:center;align-items:center;gap:8px;margin:20px 0 6px;color:#d1d0dc;font-size:.85rem}
-.hint svg{width:17px;height:17px;color:var(--cyan)}
-.menu-button{width:100%;min-height:78px;padding:14px 17px;display:grid;grid-template-columns:54px minmax(0,1fr) 25px;align-items:center;gap:16px;background:linear-gradient(115deg,#09152b,#080b14);border:1px solid #143b80;border-radius:var(--radius);color:var(--text);text-align:left;cursor:pointer;margin:0 0 15px;box-shadow:0 9px 24px #0002;transition:transform .2s,border-color .2s,background .2s}
-.menu-button:hover,.menu-button[aria-expanded="true"]{transform:translateY(-2px);border-color:#168bff;background:linear-gradient(115deg,#0b2147,#080d19)}
-.menu-button[aria-expanded="true"]{margin-bottom:10px}
+
+.menu-button{width:94%;min-height:78px;padding:14px 17px;display:grid;grid-template-columns:54px minmax(0,1fr) 25px;align-items:center;gap:16px;background:linear-gradient(115deg,#09152b,#080b14);border:1px solid #143b80;border-radius:var(--radius);color:var(--text);text-align:left;cursor:pointer;margin:0 auto 23px;box-shadow:0 9px 24px #0002;transition:transform .2s,border-color .2s,background .2s}
+.menu-button:hover,.menu-button[aria-expanded="true"]{transform:translateY(-2px);border-color:var(--primary);background:linear-gradient(115deg,#0b2147,#080d19)}
+.menu-button[aria-expanded="true"]{margin-bottom:16px}
 .menu-icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:#ffffff08;border:1px solid #ffffff12}
 .menu-icon svg{width:26px;height:26px;stroke:currentColor}
-.menu-icon.gold{color:var(--cyan);background:#168bff18}.menu-icon.violet{color:var(--violet);background:#ad7aff12}.menu-icon.green{color:var(--green);background:#19d87512}.menu-icon.pink{color:var(--pink);background:#ff438e12}.menu-icon.cyan{color:var(--cyan);background:#26d5f512}
+.menu-icon.gold{color:var(--primary-light);background:#168bff18}
+.menu-icon.violet{color:var(--violet);background:#ad7aff12}
+.menu-icon.green{color:var(--green);background:#19d87512}
+.menu-icon.pink{color:var(--pink);background:#ff438e12}
+.menu-icon.cyan{color:var(--primary-light);background:#26d5f512}
 .menu-title{font-size:clamp(1rem,3.8vw,1.34rem);font-weight:800;line-height:1.25}
 .menu-caption{display:block;color:var(--muted);font-size:.8rem;font-weight:500;margin-top:5px}
 .chevron{width:23px;height:23px;color:#aaa;transition:transform .22s}
-.menu-button[aria-expanded="true"] .chevron{transform:rotate(180deg);color:var(--cyan)}
+.menu-button[aria-expanded="true"] .chevron{transform:rotate(180deg);color:var(--primary-light)}
 .panel{display:none;margin:-1px 0 20px;padding:13px;border:1px solid var(--line);border-radius:19px;background:#050914;box-shadow:0 18px 45px #001b4d88}
 .panel.open{display:block;animation:drop .22s ease}
 @keyframes drop{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+
 .service{display:grid;grid-template-columns:45px minmax(0,1fr);gap:13px;padding:17px 14px;border:1px solid #12366d;border-radius:15px;background:linear-gradient(120deg,#0a1830,#070b14);margin:0 0 10px}
 .service:last-child{margin-bottom:0}
-.service-icon{width:43px;height:43px;display:grid;place-items:center;border-radius:14px;background:#ffffff08;color:var(--cyan);border:1px solid #ffffff12}
+.service-icon{width:43px;height:43px;display:grid;place-items:center;border-radius:14px;background:#ffffff08;color:var(--primary-light);border:1px solid #ffffff12}
 .service-icon svg{width:23px;height:23px}
 .service h3{font-size:.98rem;line-height:1.4;margin:1px 0 6px}
 .service p{color:var(--muted);font-size:.88rem;line-height:1.55;margin:0 0 13px}
+
 .small-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;border:0;border-radius:11px;padding:10px 14px;font-weight:800;font-size:.88rem;cursor:pointer;transition:filter .2s,transform .2s}
 .small-button:hover{filter:brightness(1.07);transform:translateY(-1px)}
 .small-button svg{width:18px;height:18px}
 .green-button{background:var(--green);color:#062716}
-.gold-button{background:var(--gold);color:#201a04}
+.gold-button{background:var(--primary);color:#fff}
 .outline-button{background:#25252f;border:1px solid #454552;color:var(--text)}
+
 .action-list{display:grid;gap:10px}
 .action-link{display:flex;align-items:center;gap:13px;padding:16px;border:1px solid #12366d;border-radius:14px;background:#20202a;transition:border-color .2s,transform .2s}
 .action-link:hover{border-color:#696979;transform:translateY(-1px)}
 .action-icon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:#ffffff08}
 .action-icon svg{width:23px;height:23px}
 .action-icon.green{color:var(--green)}.action-icon.pink{color:var(--pink)}
-.action-link strong{display:block;font-size:.96rem}.action-link small{display:block;color:var(--muted);margin-top:4px;font-size:.83rem}
+.action-link strong{display:block;font-size:.96rem}
+.action-link small{display:block;color:var(--muted);margin-top:4px;font-size:.83rem}
 .action-arrow{margin-left:auto;color:#888}
+
 .tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .tool{border:1px solid #12366d;background:linear-gradient(145deg,#0a1830,#070b14);border-radius:16px;padding:17px}
 .tool-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
-.tool-icon{width:39px;height:39px;display:grid;place-items:center;border-radius:12px;background:#ffffff08;color:var(--cyan)}
+.tool-icon{width:39px;height:39px;display:grid;place-items:center;border-radius:12px;background:#ffffff08;color:var(--primary-light)}
 .tool-icon svg{width:22px;height:22px}
 .tool h3{margin:0;font-size:.98rem}
 .tool p{color:var(--muted);font-size:.86rem;line-height:1.5;margin:7px 0 13px}
@@ -79,79 +112,100 @@ input[type=file]{display:none}
 .file-name{display:block;overflow-wrap:anywhere;font-size:.78rem;color:var(--muted);margin:4px 0 12px;min-height:18px}
 textarea{width:100%;min-height:94px;background:#101016;color:white;border:1px solid #454552;border-radius:12px;padding:12px;margin:12px 0 4px;resize:vertical}
 .qr{display:none;text-align:center;margin:16px auto}
-.qr img{max-width:240px;width:100%;padding:8px;background:#fff;border-radius:13px}
+.qr img{max-width:260px;width:100%;padding:10px;background:#fff;border-radius:14px;image-rendering:-webkit-optimize-contrast;box-shadow:0 6px 20px #0006}
+.qr .note{margin-top:10px}
 .note{font-size:.82rem;color:var(--muted);line-height:1.55}
+
 footer{text-align:center;color:#888895;font-size:.83rem;line-height:1.7;margin-top:32px;padding-top:20px;border-top:1px solid #ffffff12}
 footer strong{color:#e6e4ee}
-@media(max-width:540px){
- body{padding:0 12px 32px}.topbar{margin-bottom:20px}.top-tag{display:none}.brand-logo{width:46px;height:46px}.hero{padding:10px 0 25px}
- h1{letter-spacing:-1px}.menu-button{min-height:74px;grid-template-columns:43px minmax(0,1fr) 20px;gap:11px;padding:12px;border-radius:19px}
- .menu-icon{width:43px;height:43px;border-radius:13px}.menu-icon svg{width:23px;height:23px}.menu-caption{font-size:.74rem}
- .panel{padding:9px}.service{grid-template-columns:38px minmax(0,1fr);gap:10px;padding:14px 10px}
- .service-icon{width:37px;height:37px;border-radius:12px}.service-icon svg{width:21px;height:21px}
- .tools{grid-template-columns:1fr}.small-button{width:100%}
-}
-/* Ajuste visual: botões um pouco mais estreitos e com mais espaço entre eles */
-.menu-button{width:94%;margin-left:auto;margin-right:auto;margin-bottom:23px}
-.menu-button[aria-expanded="true"]{margin-bottom:16px}
-@media(max-width:540px){
- .menu-button{width:92%;margin-bottom:22px}
- .menu-button[aria-expanded="true"]{margin-bottom:15px}
- .small-button{width:auto;max-width:100%;padding:10px 12px}
- .tool .small-button{width:auto}
-}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 
-/* Galeria DJ Ray — versão atualizada */
 .gallery-section{width:100%;margin:8px auto 30px;padding:20px 0 8px;text-align:center;overflow:hidden}
 .gallery-heading h2{font-size:clamp(1.5rem,5vw,2.1rem);margin:15px 0 10px;line-height:1.2}
-.gallery-heading h2 span{color:var(--cyan)}
+.gallery-heading h2 span{color:var(--primary-light)}
 .gallery-heading p{color:var(--muted);font-size:.9rem;line-height:1.6;margin:0 0 22px}
-.gallery-section .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid #168bff70;border-radius:30px;background:#168bff12;color:var(--cyan);font-size:.76rem;font-weight:800;letter-spacing:1.2px}
 .gallery-wrap{display:flex;align-items:center;gap:10px;width:100%}
-.gallery-track{display:flex;gap:18px;width:100%;min-width:0;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--cyan) #101a2d;padding:8px 3px 16px;-webkit-overflow-scrolling:touch}
+.gallery-track{display:flex;gap:18px;width:100%;min-width:0;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--primary-light) #101a2d;padding:8px 3px 16px;-webkit-overflow-scrolling:touch;cursor:grab}
+.gallery-track:active{cursor:grabbing}
 .gallery-card{flex:0 0 85%;max-width:430px;min-width:0;margin:0;overflow:hidden;scroll-snap-align:center;background:linear-gradient(145deg,#0b1b38,#070b14);border:1px solid #168bff70;border-radius:19px;box-shadow:0 12px 30px #0007;transition:transform .25s ease,border-color .25s ease}
-.gallery-card:hover{transform:translateY(-3px);border-color:var(--cyan)}
+.gallery-card:hover{transform:translateY(-3px);border-color:var(--primary-light)}
 .gallery-media{width:100%;aspect-ratio:16/9;overflow:hidden;background:#03050c;position:relative}
 .gallery-media img,.gallery-media video{display:block;width:100%;height:100%;object-fit:cover;object-position:center;border:0}
 .gallery-media a{display:block;width:100%;height:100%}
 .gallery-card figcaption{min-height:52px;padding:13px 10px;display:flex;justify-content:center;align-items:center;color:var(--text);font-size:.9rem;font-weight:700;line-height:1.4;text-align:center}
 .gallery-arrow{flex:0 0 40px;width:40px;height:44px;display:flex;justify-content:center;align-items:center;border:1px solid #168bff80;border-radius:12px;background:#0b1b38;color:white;font-size:28px;cursor:pointer;transition:background .2s,border-color .2s}
-.gallery-arrow:hover{background:var(--gold2);border-color:var(--cyan)}
+.gallery-arrow:hover{background:var(--primary-dark);border-color:var(--primary-light)}
 .gallery-hint{margin-top:10px;color:var(--muted);font-size:.8rem}
+.gallery-dots{display:flex;justify-content:center;gap:6px;margin-top:12px}
+.gallery-dot{width:8px;height:8px;border-radius:50%;background:#168bff44;border:0;cursor:pointer;transition:background .2s,width .2s;padding:0}
+.gallery-dot.active{background:var(--primary-light);width:20px;border-radius:4px}
+
 @media(min-width:541px){.gallery-card{flex-basis:80%}}
 @media(min-width:900px){.gallery-card{flex-basis:430px}}
-@media(max-width:540px){.gallery-section{margin-top:5px;padding:10px 0 20px}.gallery-wrap{gap:5px}.gallery-track{gap:12px;padding:5px 2px 13px}.gallery-card{flex-basis:88%;border-radius:16px}.gallery-card figcaption{min-height:46px;font-size:.83rem;padding:10px 7px}.gallery-arrow{flex-basis:32px;width:32px;height:38px;font-size:23px}}
-@media(prefers-reduced-motion:reduce){.gallery-track{scroll-behavior:auto}.gallery-card{transition:none}}
+@media(max-width:540px){
+  .gallery-section{margin-top:5px;padding:10px 0 20px}
+  .gallery-wrap{gap:5px}
+  .gallery-track{gap:12px;padding:5px 2px 13px}
+  .gallery-card{flex-basis:88%;border-radius:16px}
+  .gallery-card figcaption{min-height:46px;font-size:.83rem;padding:10px 7px}
+  .gallery-arrow{flex-basis:32px;width:32px;height:38px;font-size:23px}
+}
 
-/* POP-UP DE SOLICITAÇÃO DE ORÇAMENTO */
+.whatsapp-float{position:fixed;bottom:20px;right:20px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 8px 25px #25D36655;z-index:500;transition:transform .2s}
+.whatsapp-float:hover{transform:scale(1.1)}
+.whatsapp-float svg{width:30px;height:30px}
+@media(max-width:540px){.whatsapp-float{width:50px;height:50px;bottom:14px;right:14px}}
+
 .orcamento-overlay{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:16px;background:#000b;overflow-y:auto}
 .orcamento-overlay.open{display:flex}
 .orcamento-modal{position:relative;width:min(100%,480px);max-height:calc(100vh - 32px);overflow-y:auto;padding:22px;background:#14213a;border:1px solid #24518a;border-radius:18px;box-shadow:0 24px 70px #0009;color:#fff}
-.orcamento-modal h2{margin:0 34px 16px 0;text-align:center;color:#29cfff;font-size:1.25rem}
+.orcamento-modal h2{margin:0 34px 16px 0;text-align:center;color:var(--primary-light);font-size:1.25rem}
 .orcamento-fechar{position:absolute;top:10px;right:12px;width:36px;height:36px;margin:0;border:0;border-radius:9px;background:#263c5c;color:#fff;font-size:25px;line-height:1;cursor:pointer}
 .orcamento-modal label{display:block;margin:10px 0 5px;font-size:.82rem;font-weight:700;color:#eaf5ff}
 .orcamento-modal input,.orcamento-modal select,.orcamento-modal textarea{width:100%;min-width:0;min-height:40px;padding:9px 10px;border:1px solid #345276;border-radius:8px;background:#080d1b;color:#fff;font:inherit;font-size:.88rem}
 .orcamento-modal textarea{min-height:72px;resize:vertical}
 .orcamento-data{display:grid;grid-template-columns:.8fr 1.4fr 1fr;gap:7px}
+.orcamento-horario{display:grid;grid-template-columns:1fr 1fr;gap:7px}
 .orcamento-opcoes{display:flex;align-items:center;gap:18px;flex-wrap:wrap;min-height:35px}
 .orcamento-opcoes label{display:flex;align-items:center;gap:6px;margin:3px 0;font-weight:500}
-.orcamento-opcoes input{width:16px;min-height:16px;height:16px;margin:0;accent-color:#29cfff}
-.orcamento-enviar{width:100%;min-height:44px;margin-top:16px;border:0;border-radius:9px;background:#29cfff;color:#080d1b;font-weight:900;cursor:pointer}
+.orcamento-opcoes input{width:16px;min-height:16px;height:16px;margin:0;accent-color:var(--primary-light)}
+.orcamento-enviar{width:100%;min-height:44px;margin-top:16px;border:0;border-radius:9px;background:var(--primary-light);color:#080d1b;font-weight:900;cursor:pointer}
 .orcamento-enviar:hover{background:#75e5ff}
-.orcamento-modal .orcamento-aviso{margin:10px 0 0;color:#b8c9e8;font-size:.76rem;line-height:1.45}
+.orcamento-modal .orcamento-aviso{margin:10px 0 0;color:var(--muted);font-size:.76rem;line-height:1.45}
 @media(max-width:380px){.orcamento-modal{padding:17px}.orcamento-data{grid-template-columns:.8fr 1.2fr .9fr;gap:5px}.orcamento-data select{padding:8px 5px;font-size:.78rem}}
 
+@media(max-width:540px){
+  body{padding:0 12px 32px}
+  .topbar{margin-bottom:20px}
+  .top-tag{display:none}
+  .brand-logo{width:46px;height:46px}
+  .hero{padding:10px 0 25px}
+  h1{letter-spacing:-1px}
+  .menu-button{min-height:74px;grid-template-columns:43px minmax(0,1fr) 20px;gap:11px;padding:12px;border-radius:19px;width:92%;margin-bottom:22px}
+  .menu-button[aria-expanded="true"]{margin-bottom:15px}
+  .menu-icon{width:43px;height:43px;border-radius:13px}
+  .menu-icon svg{width:23px;height:23px}
+  .menu-caption{font-size:.74rem}
+  .panel{padding:9px}
+  .service{grid-template-columns:38px minmax(0,1fr);gap:10px;padding:14px 10px}
+  .service-icon{width:37px;height:37px;border-radius:12px}
+  .service-icon svg{width:21px;height:21px}
+  .tools{grid-template-columns:1fr}
+  .small-button{width:auto;max-width:100%;padding:10px 12px}
+  .tool .small-button{width:auto}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.gallery-track{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <main class="container">
 <header class="topbar">
- <a class="brand" href="#top" aria-label="DJ Ray — início"><img class="brand-logo" src="data:image/png;base64,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" alt="Logo DJ Ray"><span class="brand-label">DJ <em>RAY</em></span></a>
- <span class="top-tag">Som · Luz · Experiência</span>
+  <a class="brand" href="#top" aria-label="DJ Ray — início">
+    <img class="brand-logo" src="data:image/png;base64,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DofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA6/g8I4BMN6d1r6QAAAABJRU5ErkJggg==" alt="Logo DJ Ray">
+    <span class="brand-label">DJ <em>RAY</em></span>
+  </a>
+  <span class="top-tag">Som · Luz · Experiência</span>
 </header>
 
-<!-- GALERIA DJ RAY ATUALIZADA -->
 <section class="gallery-section" aria-label="Galeria DJ Ray">
   <div class="gallery-heading">
     <span class="eyebrow">★ DJ RAY EXPERIENCE</span>
@@ -165,13 +219,15 @@ footer strong{color:#e6e4ee}
     <div class="gallery-track" id="dj-gallery">
       <figure class="gallery-card">
         <div class="gallery-media">
-          <img src="https://www.batistasound.com.br/images/gallery-3.jpg" alt="DJ tocando em evento de casamento" loading="lazy">
+          <img src="https://www.batistasound.com.br/images/gallery-3.jpg" alt="DJ tocando em evento de casamento" loading="lazy" decoding="async">
         </div>
         <figcaption>DJ para casamentos e celebrações</figcaption>
       </figure>
       <figure class="gallery-card">
         <div class="gallery-media">
-          <video autoplay muted loop playsinline preload="metadata" poster="https://www.batistasound.com.br/images/gallery-3.jpg">
+          <video muted loop playsinline preload="none"
+                 poster="https://www.batistasound.com.br/images/gallery-3.jpg"
+                 onmouseenter="this.play().catch(()=>{})" onmouseleave="this.pause()">
             <source src="https://v.ftcdn.net/06/11/07/59/700_F_611075910_e6t5zJoBhpW8PSMKObRc9HW23JfubdgU_ST.mp4" type="video/mp4">
             Seu navegador não suporta vídeos.
           </video>
@@ -180,14 +236,14 @@ footer strong{color:#e6e4ee}
       </figure>
       <figure class="gallery-card">
         <div class="gallery-media">
-          <img src="https://imagens.ne10.uol.com.br/veiculos/_midias/jpg/2025/08/07/597x330/1_istock_1806011581-35060677.jpg" alt="DJ animando uma festa" loading="lazy">
+          <img src="https://imagens.ne10.uol.com.br/veiculos/_midias/jpg/2025/08/07/597x330/1_istock_1806011581-35060677.jpg" alt="DJ animando uma festa" loading="lazy" decoding="async">
         </div>
         <figcaption>Música e animação para sua festa</figcaption>
       </figure>
       <figure class="gallery-card">
         <div class="gallery-media">
-          <a href="https://www.instagram.com/reel/DYk3raJRGeO/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener">
-            <img src="https://img.magnific.com/psd-gratuitas/caixa-de-som-profissional-para-estudio-de-musica-em-renderizacao-3d_363450-7464.jpg" alt="Caixa de som profissional" loading="lazy">
+          <a href="https://www.instagram.com/reel/DYk3raJRGeO/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener" aria-label="Ver no Instagram">
+            <img src="https://img.magnific.com/psd-gratuitas/caixa-de-som-profissional-para-estudio-de-musica-em-renderizacao-3d_363450-7464.jpg" alt="Caixa de som profissional" loading="lazy" decoding="async">
           </a>
         </div>
         <figcaption>Equipamentos de sonorização profissional</figcaption>
@@ -198,249 +254,439 @@ footer strong{color:#e6e4ee}
   <div class="gallery-hint">⟵ Arraste ou deslize para conhecer nosso trabalho ⟶</div>
 </section>
 
-
-<button class="menu-button" aria-expanded="false" aria-controls="som-panel" onclick="togglePanel(this,'som-panel')">
- <span class="menu-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></span>
- <span class="menu-title">Aluguel de Som<span class="menu-caption">Som profissional e iluminação para seu evento</span></span>
- <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+<button type="button" class="menu-button" aria-expanded="false" aria-controls="som-panel" onclick="togglePanel(this,'som-panel')">
+  <span class="menu-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></span>
+  <span class="menu-title">Aluguel de Som<span class="menu-caption">Som profissional e iluminação para seu evento</span></span>
+  <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
 </button>
 <div class="panel" id="som-panel"><div id="som-services"></div></div>
 
-<button class="menu-button" aria-expanded="false" aria-controls="dj-panel" onclick="togglePanel(this,'dj-panel')">
- <span class="menu-icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M5.6 5.6 9.9 9.9M18.4 5.6l-4.3 4.3M5.6 18.4l4.3-4.3M18.4 18.4l-4.3-4.3"/></svg></span>
- <span class="menu-title">Contrate o DJ Ray para sua Festa<span class="menu-caption">Música, energia e pista animada</span></span>
- <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+<button type="button" class="menu-button" aria-expanded="false" aria-controls="dj-panel" onclick="togglePanel(this,'dj-panel')">
+  <span class="menu-icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M5.6 5.6 9.9 9.9M18.4 5.6l-4.3 4.3M5.6 18.4l4.3-4.3M18.4 18.4l-4.3-4.3"/></svg></span>
+  <span class="menu-title">Contrate o DJ Ray para sua Festa<span class="menu-caption">Música, energia e pista animada</span></span>
+  <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
 </button>
 <div class="panel" id="dj-panel"><div id="dj-services"></div></div>
 
-<button class="menu-button" aria-expanded="false" aria-controls="contato-panel" onclick="togglePanel(this,'contato-panel')">
- <span class="menu-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg></span>
- <span class="menu-title">Contato<span class="menu-caption">Fale com a equipe do DJ Ray</span></span>
- <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+<button type="button" class="menu-button" aria-expanded="false" aria-controls="contato-panel" onclick="togglePanel(this,'contato-panel')">
+  <span class="menu-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg></span>
+  <span class="menu-title">Contato<span class="menu-caption">Fale com a equipe do DJ Ray</span></span>
+  <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
 </button>
 <div class="panel" id="contato-panel">
- <div class="action-list">
-  <a class="action-link" id="instagram-contact" href="#" target="_blank" rel="noopener"><span class="action-icon pink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></span><span><strong>Instagram</strong><small>Acesse o perfil oficial</small></span><span class="action-arrow">↗</span></a>
-  <a class="action-link" href="#" onclick="whatsapp('Olá, DJ Ray! Vim pelo site e gostaria de informações.');return false"><span class="action-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/><path d="M9 9c1 3 3 5 6 6l1.2-1.2 2 .8-.2 2c-4 .8-10.4-5.6-9.6-9.6l2-.2.8 2L9 9Z"/></svg></span><span><strong>WhatsApp</strong><small>Inicie uma conversa diretamente</small></span><span class="action-arrow">↗</span></a>
- </div>
+  <div class="action-list">
+    <a class="action-link" id="instagram-contact" href="#" target="_blank" rel="noopener"><span class="action-icon pink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></span><span><strong>Instagram</strong><small>Acesse o perfil oficial</small></span><span class="action-arrow">↗</span></a>
+    <a class="action-link" href="#" onclick="whatsapp('Olá, DJ Ray! Vim pelo site e gostaria de informações.');return false"><span class="action-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/><path d="M9 9c1 3 3 5 6 6l1.2-1.2 2 .8-.2 2c-4 .8-10.4-5.6-9.6-9.6l2-.2.8 2L9 9Z"/></svg></span><span><strong>WhatsApp</strong><small>Inicie uma conversa diretamente</small></span><span class="action-arrow">↗</span></a>
+  </div>
 </div>
 
 <a class="menu-button" id="follow-instagram" href="#" target="_blank" rel="noopener">
- <span class="menu-icon pink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></span>
- <span class="menu-title">Seguir no Instagram<span class="menu-caption">Novidades, eventos e bastidores</span></span>
- <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+  <span class="menu-icon pink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></span>
+  <span class="menu-title">Seguir no Instagram<span class="menu-caption">Novidades, eventos e bastidores</span></span>
+  <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
 </a>
 
-<button class="menu-button" onclick="saveContact()">
- <span class="menu-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="9" r="2.5"/><path d="M8 17c.8-2.5 7.2-2.5 8 0M8 3v2M16 3v2"/></svg></span>
- <span class="menu-title">Salvar Contato<span class="menu-caption">Baixe os dados de contato do DJ Ray</span></span>
- <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+<button type="button" class="menu-button" onclick="saveContact()">
+  <span class="menu-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="9" r="2.5"/><path d="M8 17c.8-2.5 7.2-2.5 8 0M8 3v2M16 3v2"/></svg></span>
+  <span class="menu-title">Salvar Contato<span class="menu-caption">Baixe os dados de contato do DJ Ray</span></span>
+  <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
 </button>
 
-<button class="menu-button" aria-expanded="false" aria-controls="enviar-panel" onclick="togglePanel(this,'enviar-panel')">
- <span class="menu-icon cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4m-5 5 5-5 5 5"/><path d="M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg></span>
- <span class="menu-title">Enviar Foto/Vídeo<span class="menu-caption">Selecione e compartilhe um arquivo</span></span>
- <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+<button type="button" class="menu-button" aria-expanded="false" aria-controls="enviar-panel" onclick="togglePanel(this,'enviar-panel')">
+  <span class="menu-icon cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4m-5 5 5-5 5 5"/><path d="M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg></span>
+  <span class="menu-title">Enviar Foto/Vídeo<span class="menu-caption">Selecione e compartilhe um arquivo</span></span>
+  <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
 </button>
 <div class="panel" id="enviar-panel">
- <div class="tools">
-  <div class="tool"><div class="tool-head"><span class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></span><h3>Enviar foto</h3></div><p>Escolha uma imagem no seu dispositivo.</p><label class="file-label" for="photo">＋ Selecionar foto</label><input id="photo" type="file" accept="image/*" onchange="showFileName(this,'photo-name')"><span class="file-name" id="photo-name">Nenhuma foto selecionada</span><button class="small-button green-button" onclick="shareFile('photo')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4m-5 5 5-5 5 5M5 14v5h14v-5"/></svg> Compartilhar foto</button></div>
-  <div class="tool"><div class="tool-head"><span class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="m16 10 5-3v10l-5-3"/><path d="m8 10 4 2-4 2v-4Z"/></svg></span><h3>Enviar vídeo</h3></div><p>Escolha um vídeo no seu dispositivo.</p><label class="file-label" for="video">＋ Selecionar vídeo</label><input id="video" type="file" accept="video/*" onchange="showFileName(this,'video-name')"><span class="file-name" id="video-name">Nenhum vídeo selecionado</span><button class="small-button green-button" onclick="shareFile('video')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4m-5 5 5-5 5 5M5 14v5h14v-5"/></svg> Compartilhar vídeo</button></div>
- </div><p class="note">O compartilhamento depende do navegador e do dispositivo. Se não for compatível, abra o WhatsApp e anexe o arquivo manualmente.</p>
+  <div class="tools">
+    <div class="tool"><div class="tool-head"><span class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></span><h3>Enviar foto</h3></div><p>Escolha uma imagem no seu dispositivo.</p><label class="file-label" for="photo">＋ Selecionar foto</label><input id="photo" type="file" accept="image/*" onchange="showFileName(this,'photo-name')"><span class="file-name" id="photo-name">Nenhuma foto selecionada</span><button type="button" class="small-button green-button" onclick="shareFile('photo')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4m-5 5 5-5 5 5M5 14v5h14v-5"/></svg> Compartilhar foto</button></div>
+    <div class="tool"><div class="tool-head"><span class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="m16 10 5-3v10l-5-3"/><path d="m8 10 4 2-4 2v-4Z"/></svg></span><h3>Enviar vídeo</h3></div><p>Escolha um vídeo no seu dispositivo.</p><label class="file-label" for="video">＋ Selecionar vídeo</label><input id="video" type="file" accept="video/*" onchange="showFileName(this,'video-name')"><span class="file-name" id="video-name">Nenhum vídeo selecionado</span><button type="button" class="small-button green-button" onclick="shareFile('video')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4m-5 5 5-5 5 5M5 14v5h14v-5"/></svg> Compartilhar vídeo</button></div>
+  </div><p class="note">O compartilhamento depende do navegador e do dispositivo. Se não for compatível, abra o WhatsApp e anexe o arquivo manualmente.</p>
 </div>
 
-<button class="menu-button" aria-expanded="false" aria-controls="pix-panel" onclick="togglePanel(this,'pix-panel')">
- <span class="menu-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m7 3 4 4-4 4-4-4 4-4ZM17 13l4 4-4 4-4-4 4-4ZM14 3h5v5M5 16H3v5h5M13 8l3 3-3 3-3-3 3-3Z"/></svg></span>
- <span class="menu-title">Pix<span class="menu-caption">QR Code e código de pagamento</span></span>
- <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+<button type="button" class="menu-button" aria-expanded="false" aria-controls="pix-panel" onclick="togglePanel(this,'pix-panel')">
+  <span class="menu-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m7 3 4 4-4 4-4-4 4-4ZM17 13l4 4-4 4-4-4 4-4ZM14 3h5v5M5 16H3v5h5M13 8l3 3-3 3-3-3 3-3Z"/></svg></span>
+  <span class="menu-title">Pix<span class="menu-caption">QR Code e código de pagamento</span></span>
+  <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
 </button>
 <div class="panel" id="pix-panel">
- <div class="tools">
-  <div class="tool"><div class="tool-head"><span class="tool-icon" style="color:var(--cyan)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v2M17 20h4M20 18v3"/></svg></span><h3>QR Code Pix</h3></div><p>Exiba a imagem do QR Code para pagamento.</p><button class="small-button outline-button" onclick="showQR()">Mostrar QR Code</button></div>
-  <div class="tool"><div class="tool-head"><span class="tool-icon" style="color:var(--cyan)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h2"/></svg></span><h3>Copiar código Pix</h3></div><p>Copie o código Pix copia e cola.</p><button class="small-button gold-button" onclick="copyPix()">Copiar código Pix</button></div>
- </div>
- <div class="qr" id="qr-box"><img id="qr-image" alt="QR Code Pix"><p class="note">Confira o nome do recebedor no aplicativo do banco antes de confirmar o pagamento.</p></div>
- <textarea id="pix-text" readonly placeholder="Chave Pix configurada no site."></textarea>
- <p class="note">QR Code Pix configurado para Raythson, em Ubá - MG. Antes de pagar, confira o nome do recebedor no aplicativo do banco.</p>
+  <div class="tools">
+    <div class="tool"><div class="tool-head"><span class="tool-icon" style="color:var(--primary-light)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v2M17 20h4M20 18v3"/></svg></span><h3>QR Code Pix</h3></div><p>Exiba a imagem do QR Code para pagamento.</p><button type="button" class="small-button outline-button" onclick="showQR()">Mostrar QR Code</button></div>
+    <div class="tool"><div class="tool-head"><span class="tool-icon" style="color:var(--primary-light)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h2"/></svg></span><h3>Copiar código Pix</h3></div><p>Copie o código Pix copia e cola.</p><button type="button" class="small-button gold-button" onclick="copyPix()">Copiar código Pix</button></div>
+  </div>
+  <div class="qr" id="qr-box" aria-live="polite">
+    <img id="qr-image" alt="QR Code Pix para pagamento">
+    <p class="note">Recebedor: <strong>Raythson</strong> · Ubá-MG<br>
+    Confira o nome no app do banco antes de confirmar.</p>
+  </div>
+  <textarea id="pix-text" readonly placeholder="Chave Pix configurada no site." style="display:none"></textarea>
+  <p class="note">QR Code Pix configurado para Raythson, em Ubá - MG. Antes de pagar, confira o nome do recebedor no aplicativo do banco.</p>
 </div>
+
 <div class="orcamento-overlay" id="orcamento-overlay" role="dialog" aria-modal="true" aria-labelledby="orcamento-titulo" onclick="fecharOrcamentoFora(event)">
- <div class="orcamento-modal">
-  <button class="orcamento-fechar" type="button" aria-label="Fechar formulário" onclick="fecharOrcamento()">&times;</button>
-  <h2 id="orcamento-titulo">Informações do Evento</h2>
-  <form id="formEvento">
-   <label for="orc-evento">Tipo de evento</label>
-   <select id="orc-evento" name="evento" required>
-    <option value="">Selecione o evento</option><option>Confraternização</option><option>Casamento</option><option>Aniversário</option><option>Debutante</option><option>Show</option><option>Outro</option><option>Aluguel</option><option>Evento</option>
-   </select>
-   <label for="orc-convidados">Número de convidados</label>
-   <input id="orc-convidados" type="number" name="convidados" min="1" step="1" placeholder="Ex.: 100 convidados" required>
-   <label>Data do evento</label>
-   <div class="orcamento-data">
-    <select name="dia" aria-label="Dia" required><option value="">Dia</option></select>
-    <select name="mes" aria-label="Mês" required><option value="">Mês</option><option>Janeiro</option><option>Fevereiro</option><option>Março</option><option>Abril</option><option>Maio</option><option>Junho</option><option>Julho</option><option>Agosto</option><option>Setembro</option><option>Outubro</option><option>Novembro</option><option>Dezembro</option></select>
-    <select name="ano" aria-label="Ano" required><option value="">Ano</option></select>
-   </div>
-  
-   <label for="orc-endereco">Endereço do evento</label><textarea id="orc-endereco" name="endereco" placeholder="Rua, número, bairro e cidade..." required></textarea>
-   <label>Tipo de local</label><div class="orcamento-opcoes"><label><input type="radio" name="local" value="Aberto" required> Aberto</label><label><input type="radio" name="local" value="Fechado"> Fechado</label></div>
-   <label>Local coberto?</label><div class="orcamento-opcoes"><label><input type="radio" name="coberto" value="Sim" required> Sim</label><label><input type="radio" name="coberto" value="Não"> Não</label></div>
-   <button class="orcamento-enviar" type="submit">Enviar solicitação pelo WhatsApp</button>
-   <p class="orcamento-aviso">Ao enviar, o WhatsApp será aberto com os dados do evento preenchidos para você revisar e encaminhar.</p>
-  </form>
- </div>
+  <div class="orcamento-modal">
+    <button class="orcamento-fechar" type="button" aria-label="Fechar formulário" onclick="fecharOrcamento()">&times;</button>
+    <h2 id="orcamento-titulo">Informações do Evento</h2>
+    <form id="formEvento" novalidate>
+      <label for="orc-evento">Tipo de evento</label>
+      <select id="orc-evento" name="evento" required>
+        <option value="">Selecione o evento</option><option>Confraternização</option><option>Casamento</option><option>Aniversário</option><option>Debutante</option><option>Show</option><option>Outro</option><option>Aluguel</option><option>Evento</option>
+      </select>
+      <label for="orc-convidados">Número de convidados</label>
+      <input id="orc-convidados" type="number" name="convidados" min="1" step="1" placeholder="Ex.: 100 convidados" required>
+      <label>Data do evento</label>
+      <div class="orcamento-data">
+        <select name="dia" aria-label="Dia" required><option value="">Dia</option></select>
+        <select name="mes" aria-label="Mês" required><option value="">Mês</option><option>Janeiro</option><option>Fevereiro</option><option>Março</option><option>Abril</option><option>Maio</option><option>Junho</option><option>Julho</option><option>Agosto</option><option>Setembro</option><option>Outubro</option><option>Novembro</option><option>Dezembro</option></select>
+        <select name="ano" aria-label="Ano" required><option value="">Ano</option></select>
+      </div>
+      <label>Horário do evento</label>
+      <div class="orcamento-horario">
+        <input type="time" name="horario_inicio" aria-label="Horário de início" required>
+        <input type="time" name="horario_fim" aria-label="Horário de término">
+      </div>
+      <label for="orc-endereco">Endereço do evento</label>
+      <textarea id="orc-endereco" name="endereco" placeholder="Rua, número, bairro e cidade..." required></textarea>
+      <label>Tipo de local</label>
+      <div class="orcamento-opcoes">
+        <label><input type="radio" name="local" value="Aberto" required> Aberto</label>
+        <label><input type="radio" name="local" value="Fechado"> Fechado</label>
+      </div>
+      <label>Local coberto?</label>
+      <div class="orcamento-opcoes">
+        <label><input type="radio" name="coberto" value="Sim" required> Sim</label>
+        <label><input type="radio" name="coberto" value="Não"> Não</label>
+      </div>
+      <button class="orcamento-enviar" type="submit">Enviar solicitação pelo WhatsApp</button>
+      <p class="orcamento-aviso">Ao enviar, o WhatsApp será aberto com os dados do evento preenchidos para você revisar e encaminhar.</p>
+    </form>
+  </div>
 </div>
+
+<a class="whatsapp-float" href="#" onclick="whatsapp('Olá, DJ Ray! Vim pelo site.');return false" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm5.4 14.2c-.2.6-1.2 1.2-1.7 1.3-.5.1-1 .2-1.7 0-.9-.2-2.1-.7-3.5-2-1.7-1.6-2.9-3.6-3.2-4.3-.3-.7-.2-1.3 0-1.8.2-.4.5-.6.7-.7.2-.1.4-.1.6-.1h.4c.2 0 .3 0 .5.4.2.5.6 1.6.6 1.7.1.1.1.3 0 .4-.1.2-.1.3-.3.4l-.4.5c-.1.1-.3.3-.1.6.2.4.7 1.1 1.5 1.8 1 .9 1.8 1.2 2.1 1.3.3.1.5.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1l1.7.8c.3.1.4.2.4.3 0 .2 0 .8-.2 1.4Z"/></svg>
+</a>
+
 <footer><strong>DJ RAY</strong> · Som, iluminação e música para seu evento.<br>© <span id="year"></span> Todos os direitos reservados.</footer>
 </main>
+
 <script>
-/* PERSONALIZE ESTES DADOS ANTES DE PUBLICAR O SITE */
-const CONFIG={
- nome:"DJ Ray",
- whatsapp:"32999175329", // DDI + DDD + número, somente dígitos
- instagram:"https://www.instagram.com/djraysom/",
- telefone:"32 99917-5329",
- email:"",
- pixKey:"eaff8106-57d4-4c07-a9d3-0f775946a810",
- pixCode:"00020101021126580014br.gov.bcb.pix0136eaff8106-57d4-4c07-a9d3-0f775946a8105204000053039865802BR5908RAYTHSON6003UBA62070503***6304AC2A",
- pixQrImage:"data:image/png;base64,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"
+/* ========== CONFIGURAÇÕES ========== */
+const CONFIG = {
+  nome: "DJ Ray",
+  whatsapp: "32999175329",   // ✅ DDI 55 + DDD + número
+  instagram: "https://www.instagram.com/djraysom/",
+  telefone: "32 99917-5329",
+  email: "",
+  pixKey: "eaff8106-57d4-4c07-a9d3-0f775946a810",
+  pixCode: "00020101021126580014br.gov.bcb.pix0136eaff8106-57d4-4c07-a9d3-0f775946a8105204000053039865802BR5908RAYTHSON6003UBA62070503***6304AC2A",
+  pixQrFile: "pix-qr.png"
 };
-const iconSvg={
- party:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/><path d="m19 16 .9 2.1L22 19l-2.1.9L19 22l-.9-2.1L16 19l2.1-.9L19 16Z"/></svg>',
- speaker:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="8" r="2"/><circle cx="12" cy="16" r="3"/></svg>',
- star:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></svg>',
- handshake:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 12 4-4 4 1 3-2 7 4-7 8-4-3-3 1-4-5Z"/><path d="m7 8 3-3 5 1 2 2M9 15l3 2M12 12l3 3"/></svg>',
- music:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>',
- mic:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/></svg>',
- show:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2L12 3Z"/></svg>',
- club:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V9l8-6 8 6v12M2 21h20M9 21v-6h6v6"/><path d="M8 10h.01M16 10h.01"/></svg>',
- office:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h2M9 11h2M9 15h2M15 7h.01M15 11h.01M15 15h.01M9 21v-3h6v3"/></svg>',
- drink:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10l-1 8a4 4 0 0 1-8 0L7 3ZM12 15v6M8 21h8M8 6h8"/></svg>',
- live:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="m10 10 5 2.5-5 2.5v-5ZM8 3h8"/></svg>'
+
+const iconSvg = {
+  party:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/><path d="m19 16 .9 2.1L22 19l-2.1.9L19 22l-.9-2.1L16 19l2.1-.9L19 16Z"/></svg>',
+  speaker:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="8" r="2"/><circle cx="12" cy="16" r="3"/></svg>',
+  star:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></svg>',
+  handshake:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 12 4-4 4 1 3-2 7 4-7 8-4-3-3 1-4-5Z"/><path d="m7 8 3-3 5 1 2 2M9 15l3 2M12 12l3 3"/></svg>',
+  music:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>',
+  mic:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/></svg>',
+  show:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2L12 3Z"/></svg>',
+  club:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V9l8-6 8 6v12M2 21h20M9 21v-6h6v6"/><path d="M8 10h.01M16 10h.01"/></svg>',
+  office:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h2M9 11h2M9 15h2M15 7h.01M15 11h.01M15 15h.01M9 21v-3h6v3"/></svg>',
+  drink:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10l-1 8a4 4 0 0 1-8 0L7 3ZM12 15v6M8 21h8M8 6h8"/></svg>',
+  live:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="m10 10 5 2.5-5 2.5v-5ZM8 3h8"/></svg>'
 };
-const som=[
- ["party","Festas e Eventos Corporativos","Som de Qualidade e microfones sem fio para confraternizações, formaturas e eventos empresariais."],
- ["speaker","Casamentos, Aniversários e Eventos Sociais","Equipamentos de Sonorização e Iluminação dimensionados para oferecer clareza e potência ao seu evento."],
- ["star","Sua Festa com Som Profissional e Sem Dor de Cabeça!","Cuide da diversão enquanto a estrutura de som fica por nossa conta."],
- ["handshake","Parceria de Sonorização para Buffets, Sítios e Espaços de Festas","Soluções de sonorização para espaços de eventos e parceiros."],
- ["music","Estrutura de Som e Iluminação para Bandas e Grupos de Pagode","Estrutura de áudio para apresentações de grupos musicais e bandas."],
- ["mic","O som ideal para o seu aniversário, melhor custo-benefício!","Qualidade e praticidade e o melhor para festas de 50 a 70 pessoas."]
+
+const som = [
+  ["party","Festas e Eventos Corporativos","Som de Qualidade e microfones sem fio para confraternizações, formaturas e eventos empresariais."],
+  ["speaker","Casamentos, Aniversários e Eventos Sociais","Equipamentos de Sonorização e Iluminação dimensionados para oferecer clareza e potência ao seu evento."],
+  ["star","Sua Festa com Som Profissional e Sem Dor de Cabeça!","Cuide da diversão enquanto a estrutura de som fica por nossa conta."],
+  ["handshake","Parceria de Sonorização para Buffets, Sítios e Espaços de Festas","Soluções de sonorização para espaços de eventos e parceiros."],
+  ["music","Estrutura de Som e Iluminação para Bandas e Grupos de Pagode","Estrutura de áudio para apresentações de grupos musicais e bandas."],
+  ["mic","O som ideal para o seu aniversário, melhor custo-benefício!","Qualidade e praticidade e o melhor para festas de 50 a 70 pessoas."]
 ];
-const djs=[
- ["show","Festivais e Grandes Shows","DJ para eventos de grande porte, com energia e leitura de pista."],
- ["club","Clubes e Casas Noturnas","Sets dinâmicos e repertório para manter a pista animada."],
- ["office","Eventos Corporativos e Festas de Empresas","Música adequada ao perfil da empresa e dos convidados."],
- ["drink","Bares, Restaurantes e Hotéis — Lounge e Sunset","Trilhas e sets para criar o clima ideal em ambientes sociais."],
- ["live","Lives, Transmissões e Plataformas Digitais","DJ para transmissões e projetos digitais, conforme a estrutura."]
+
+const djs = [
+  ["show","Festivais e Grandes Shows","DJ para eventos de grande porte, com energia e leitura de pista."],
+  ["club","Clubes e Casas Noturnas","Sets dinâmicos e repertório para manter a pista animada."],
+  ["office","Eventos Corporativos e Festas de Empresas","Música adequada ao perfil da empresa e dos convidados."],
+  ["drink","Bares, Restaurantes e Hotéis — Lounge e Sunset","Trilhas e sets para criar o clima ideal em ambientes sociais."],
+  ["live","Lives, Transmissões e Plataformas Digitais","DJ para transmissões e projetos digitais, conforme a estrutura."]
 ];
-function togglePanel(button,id){
- const panel=document.getElementById(id),open=panel.classList.contains('open');
- panel.classList.toggle('open',!open);button.setAttribute('aria-expanded',String(!open));
+
+/* ========== UTILITÁRIOS ========== */
+function togglePanel(button, id){
+  const panel = document.getElementById(id);
+  const open = panel.classList.contains('open');
+  panel.classList.toggle('open', !open);
+  button.setAttribute('aria-expanded', String(!open));
 }
+
 function whatsapp(message){
- const n=(CONFIG.whatsapp||'').replace(/\D/g,'');
- if(!n){alert('Não foi possível abrir o WhatsApp. Confira o número configurado no site.');return}
- window.open('https://wa.me/'+n+'?text='+encodeURIComponent(message),'_blank','noopener');
+  const n = (CONFIG.whatsapp || '').replace(/\D/g,'');
+  if(!n){ alert('Não foi possível abrir o WhatsApp. Confira o número configurado no site.'); return; }
+  window.open('https://wa.me/' + n + '?text=' + encodeURIComponent(message), '_blank', 'noopener');
 }
-function renderServices(items,target){
- const root=document.getElementById(target);
- items.forEach(([icon,title,desc])=>{
-  const box=document.createElement('article');box.className='service';
-  const ico=document.createElement('span');ico.className='service-icon';ico.innerHTML=iconSvg[icon]||iconSvg.star;
-  const content=document.createElement('div');
-  const h=document.createElement('h3');h.textContent=title;
-  const p=document.createElement('p');p.textContent=desc;
-  const b=document.createElement('button');b.className='small-button green-button';b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg> Solicitar orçamento';
-  b.onclick=()=>abrirOrcamento(title);
-  content.append(h,p,b);box.append(ico,content);root.append(box);
- });
+
+function renderServices(items, target){
+  const root = document.getElementById(target);
+  if(!root) return;
+  items.forEach(([icon, title, desc]) => {
+    const box = document.createElement('article');
+    box.className = 'service';
+    const ico = document.createElement('span');
+    ico.className = 'service-icon';
+    ico.innerHTML = iconSvg[icon] || iconSvg.star;
+    const content = document.createElement('div');
+    const h = document.createElement('h3'); h.textContent = title;
+    const p = document.createElement('p'); p.textContent = desc;
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'small-button green-button';
+    b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg> Solicitar orçamento';
+    b.onclick = () => abrirOrcamento(title);
+    content.append(h, p, b);
+    box.append(ico, content);
+    root.append(box);
+  });
 }
-function abrirOrcamento(servico=''){
- const overlay=document.getElementById('orcamento-overlay');
- const form=document.getElementById('formEvento');
- form.dataset.servico=servico;
- overlay.classList.add('open');
- document.body.style.overflow='hidden';
- const primeiro=form.querySelector('[name="evento"]');
- if(primeiro)primeiro.focus();
+
+/* ========== MODAL ORÇAMENTO ========== */
+let lastFocused = null;
+
+function abrirOrcamento(servico = ''){
+  lastFocused = document.activeElement;
+  const overlay = document.getElementById('orcamento-overlay');
+  const form = document.getElementById('formEvento');
+  form.dataset.servico = servico;
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => form.querySelector('[name="evento"]')?.focus(), 50);
+  overlay.addEventListener('keydown', trapFocus);
 }
+
 function fecharOrcamento(){
- document.getElementById('orcamento-overlay').classList.remove('open');
- document.body.style.overflow='';
+  const overlay = document.getElementById('orcamento-overlay');
+  overlay.classList.remove('open');
+  document.body.style.overflow = '';
+  overlay.removeEventListener('keydown', trapFocus);
+  lastFocused?.focus();
 }
-function fecharOrcamentoFora(event){if(event.target===event.currentTarget)fecharOrcamento()}
-document.addEventListener('keydown',event=>{if(event.key==='Escape')fecharOrcamento()});
+
+function fecharOrcamentoFora(event){
+  if(event.target === event.currentTarget) fecharOrcamento();
+}
+
+function trapFocus(e){
+  if(e.key !== 'Tab') return;
+  const modal = e.currentTarget.querySelector('.orcamento-modal');
+  const focusables = [...modal.querySelectorAll('button, input, select, textarea, a[href]')].filter(el => !el.disabled && el.offsetParent !== null);
+  if(!focusables.length) return;
+  const first = focusables[0], last = focusables[focusables.length - 1];
+  if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+  else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+}
+
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape' && document.getElementById('orcamento-overlay').classList.contains('open')){
+    fecharOrcamento();
+  }
+});
+
 (function prepararDatasOrcamento(){
- const form=document.getElementById('formEvento');
- const dia=form.querySelector('[name="dia"]'),ano=form.querySelector('[name="ano"]');
- for(let i=1;i<=31;i++){const option=document.createElement('option');option.value=String(i);option.textContent=String(i);dia.appendChild(option)}
- for(let i=2026;i<=2035;i++){const option=document.createElement('option');option.value=String(i);option.textContent=String(i);ano.appendChild(option)}
+  const form = document.getElementById('formEvento');
+  const dia = form.querySelector('[name="dia"]');
+  const ano = form.querySelector('[name="ano"]');
+  for(let i = 1; i <= 31; i++){
+    const opt = document.createElement('option');
+    opt.value = String(i); opt.textContent = String(i); dia.appendChild(opt);
+  }
+  const atual = new Date().getFullYear();
+  for(let i = atual; i <= atual + 10; i++){
+    const opt = document.createElement('option');
+    opt.value = String(i); opt.textContent = String(i); ano.appendChild(opt);
+  }
 })();
-document.getElementById('formEvento').addEventListener('submit',function(event){
- event.preventDefault();
- if(!this.reportValidity())return;
- const dados=new FormData(this);
- const numero=(CONFIG.whatsapp||'').replace(/\D/g,'');
- if(!numero){alert('Número de WhatsApp não configurado.');return}
- const servico=this.dataset.servico||'Não especificado';
- const mensagem=`Olá, DJ Ray! Gostaria de solicitar um orçamento.
+
+document.getElementById('formEvento').addEventListener('submit', function(event){
+  if(!this.checkValidity()){
+    this.reportValidity();
+    event.preventDefault();
+    return;
+  }
+  event.preventDefault();
+  const dados = new FormData(this);
+  const numero = (CONFIG.whatsapp || '').replace(/\D/g,'');
+  if(!numero){ alert('Número de WhatsApp não configurado.'); return; }
+  const servico = this.dataset.servico || 'Não especificado';
+
+  const hInicio = dados.get('horario_inicio') || 'não informado';
+  const hFim = dados.get('horario_fim') ? ' às ' + dados.get('horario_fim') : '';
+
+  const mensagem = `Olá, DJ Ray! Gostaria de solicitar um orçamento.
 
 Serviço: ${servico}
 Evento: ${dados.get('evento')}
 Número de convidados: ${dados.get('convidados')}
 Data: ${dados.get('dia')}/${dados.get('mes')}/${dados.get('ano')}
-Horário: ${dados.get('horario')}
+Horário: ${hInicio}${hFim}
 Endereço: ${dados.get('endereco')}
 Tipo de local: ${dados.get('local')}
 Local coberto: ${dados.get('coberto')}`;
- window.open('https://wa.me/'+numero+'?text='+encodeURIComponent(mensagem),'_blank','noopener');
- fecharOrcamento();
+
+  window.open('https://wa.me/' + numero + '?text=' + encodeURIComponent(mensagem), '_blank', 'noopener');
+  fecharOrcamento();
 });
+
+/* ========== CONTATO / ARQUIVOS ========== */
 function saveContact(){
- const phone=(CONFIG.whatsapp||'').replace(/\D/g,'');
- const vcf=['BEGIN:VCARD','VERSION:3.0','FN:'+CONFIG.nome,phone?'TEL;TYPE=CELL:'.concat(phone):'',CONFIG.email?'EMAIL:'+CONFIG.email:'','URL;TYPE=WORK:http://thson.com.br/','URL;TYPE=HOME:'+CONFIG.instagram,'NOTE:Aluguel de som, iluminação e serviços de DJ.','END:VCARD'].filter(Boolean).join('\r\n');
- const blob=new Blob([vcf],{type:'text/vcard;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
- a.href=url;a.download='contato_dj_ray.vcf';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  const phone = (CONFIG.whatsapp || '').replace(/\D/g,'');
+  const vcf = [
+    'BEGIN:VCARD',
+    'VERSION:3.0',
+    'FN:' + CONFIG.nome,
+    phone ? 'TEL;TYPE=CELL:' + phone : '',   // ✅ sem "+"
+    CONFIG.email ? 'EMAIL:' + CONFIG.email : '',
+    'URL;TYPE=WORK:http://thson.com.br/',
+    'URL;TYPE=HOME:' + CONFIG.instagram,
+    'NOTE:Aluguel de som, iluminação e serviços de DJ.',
+    'END:VCARD'
+  ].filter(Boolean).join('\r\n');
+  const blob = new Blob([vcf], {type: 'text/vcard;charset=utf-8'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'contato_dj_ray.vcf';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
-function showFileName(input,id){document.getElementById(id).textContent=input.files?.[0]?.name||'Nenhum arquivo selecionado'}
+
+function showFileName(input, id){
+  document.getElementById(id).textContent = input.files?.[0]?.name || 'Nenhum arquivo selecionado';
+}
+
 async function shareFile(id){
- const file=document.getElementById(id).files?.[0];if(!file){alert('Selecione primeiro um arquivo.');return}
- if(navigator.share&&(!navigator.canShare||navigator.canShare({files:[file]}))){
-  try{await navigator.share({files:[file],title:'DJ Ray',text:'Arquivo para o evento'});return}catch(e){if(e.name==='AbortError')return}
- }
- whatsapp('Olá, DJ Ray! Quero enviar o arquivo '+file.name+'.');
- alert('Se o arquivo não for anexado automaticamente, anexe-o manualmente na conversa do WhatsApp.');
+  const file = document.getElementById(id).files?.[0];
+  if(!file){ alert('Selecione primeiro um arquivo.'); return; }
+  if(navigator.share && (!navigator.canShare || navigator.canShare({files:[file]}))){
+    try{ await navigator.share({files:[file], title:'DJ Ray', text:'Arquivo para o evento'}); return; }
+    catch(e){ if(e.name === 'AbortError') return; }
+  }
+  whatsapp('Olá, DJ Ray! Quero enviar o arquivo ' + file.name + '.');
+  alert('Se o arquivo não for anexado automaticamente, anexe-o manualmente na conversa do WhatsApp.');
 }
+
+/* ========== PIX — QR HÍBRIDO ========== */
 function showQR(){
- const box=document.getElementById('qr-box'),img=document.getElementById('qr-image');
- document.getElementById('pix-text').value=CONFIG.pixCode||'';
- if(!CONFIG.pixQrImage){alert('QR Code Pix não configurado.');return}
- img.src=CONFIG.pixQrImage;box.style.display='block';
+  const box = document.getElementById('qr-box');
+  const img = document.getElementById('qr-image');
+  const note = box.querySelector('.note');
+  if(!CONFIG.pixCode){ alert('Código Pix não configurado.'); return; }
+  img.style.display = 'block';
+  img.alt = 'QR Code Pix para pagamento';
+  img.removeAttribute('data-fallbackTried');
+  if(note) note.style.display = '';
+
+  const api1 = 'https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=' + encodeURIComponent(CONFIG.pixCode);
+  const api2 = 'https://quickchart.io/qr?size=300&margin=2&text=' + encodeURIComponent(CONFIG.pixCode);
+
+  const failSafe = () => {
+    img.style.display = 'none';
+    img.alt = 'Falha ao carregar QR. Use o botão "Copiar código Pix".';
+    if(note) note.textContent = '⚠️ Não foi possível exibir o QR agora. Use o botão "Copiar código Pix" acima.';
+  };
+
+  if(CONFIG.pixQrFile){
+    img.onerror = () => {
+      img.onerror = () => {
+        if(!img.dataset.fallbackTried){ img.dataset.fallbackTried = '1'; img.onerror = failSafe; img.src = api2; }
+        else failSafe();
+      };
+      img.src = api1;
+    };
+    img.src = CONFIG.pixQrFile;
+  } else {
+    img.onerror = () => {
+      if(!img.dataset.fallbackTried){ img.dataset.fallbackTried = '1'; img.onerror = failSafe; img.src = api2; }
+      else failSafe();
+    };
+    img.src = api1;
+  }
+  box.style.display = 'block';
 }
+
 async function copyPix(){
- if(!CONFIG.pixCode){alert('Código Pix não configurado.');return}
- const ta=document.getElementById('pix-text');ta.value=CONFIG.pixCode;
- try{await navigator.clipboard.writeText(CONFIG.pixCode);alert('Código Pix copiado. Confira se o recebedor é Raythson antes de pagar.')}
- catch(e){ta.focus();ta.select();alert('O código está selecionado. Copie-o manualmente.')}
+  if(!CONFIG.pixCode){ alert('Código Pix não configurado.'); return; }
+  const ta = document.getElementById('pix-text');
+  ta.value = CONFIG.pixCode;
+  ta.style.display = 'block';
+  try{
+    if(navigator.clipboard && window.isSecureContext){
+      await navigator.clipboard.writeText(CONFIG.pixCode);
+      alert('✅ Código Pix copiado! Recebedor: Raythson (Ubá-MG)');
+    } else {
+      ta.select(); document.execCommand('copy');
+      alert('✅ Código copiado. Confira: Raythson.');
+    }
+  } catch(e){
+    ta.select(); document.execCommand('copy');
+    alert('✅ Código copiado. Confira: Raythson.');
+  }
 }
 
-/* Navegação da galeria DJ Ray */
-const gallery=document.getElementById('dj-gallery');
-const prevButton=document.querySelector('.gallery-prev');
-const nextButton=document.querySelector('.gallery-next');
+/* ========== GALERIA ========== */
+const gallery = document.getElementById('dj-gallery');
+const prevButton = document.querySelector('.gallery-prev');
+const nextButton = document.querySelector('.gallery-next');
+
 function moveGallery(direction){
- if(!gallery)return;
- const card=gallery.querySelector('.gallery-card');
- if(!card)return;
- const cardWidth=card.getBoundingClientRect().width;
- const gap=parseFloat(getComputedStyle(gallery).gap)||0;
- gallery.scrollBy({left:direction*(cardWidth+gap),behavior:'smooth'});
+  if(!gallery) return;
+  const card = gallery.querySelector('.gallery-card');
+  if(!card) return;
+  const cardWidth = card.getBoundingClientRect().width;
+  const gap = parseFloat(getComputedStyle(gallery).gap) || 0;
+  gallery.scrollBy({left: direction * (cardWidth + gap), behavior: 'smooth'});
 }
-if(prevButton)prevButton.addEventListener('click',()=>moveGallery(-1));
-if(nextButton)nextButton.addEventListener('click',()=>moveGallery(1));
 
-document.getElementById('year').textContent=new Date().getFullYear();
-document.getElementById('instagram-contact').href=CONFIG.instagram;
-document.getElementById('follow-instagram').href=CONFIG.instagram;
-renderServices(som,'som-services');renderServices(djs,'dj-services');
+if(prevButton) prevButton.addEventListener('click', () => moveGallery(-1));
+if(nextButton) nextButton.addEventListener('click', () => moveGallery(1));
+
+if(gallery){
+  const cards = [...gallery.querySelectorAll('.gallery-card')];
+  const dotsWrap = document.createElement('div');
+  dotsWrap.className = 'gallery-dots';
+  dotsWrap.setAttribute('aria-label', 'Navegação da galeria');
+  cards.forEach((_, i) => {
+    const d = document.createElement('button');
+    d.type = 'button';
+    d.className = 'gallery-dot';
+    d.setAttribute('aria-label', `Ir para imagem ${i+1}`);
+    d.onclick = () => cards[i].scrollIntoView({behavior: 'smooth', inline: 'center', block: 'nearest'});
+    dotsWrap.appendChild(d);
+  });
+  gallery.parentElement.parentElement.appendChild(dotsWrap);
+
+  const updateDots = () => {
+    const center = gallery.scrollLeft + gallery.clientWidth / 2;
+    let closest = 0, min = Infinity;
+    cards.forEach((c, i) => {
+      const d = Math.abs(c.offsetLeft + c.offsetWidth / 2 - center);
+      if(d < min){ min = d; closest = i; }
+    });
+    dotsWrap.querySelectorAll('.gallery-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === closest);
+      d.setAttribute('aria-current', i === closest ? 'true' : 'false');
+    });
+  };
+  gallery.addEventListener('scroll', updateDots, {passive: true});
+  updateDots();
+}
+
+/* ========== INIT ========== */
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('instagram-contact').href = CONFIG.instagram;
+document.getElementById('follow-instagram').href = CONFIG.instagram;
+renderServices(som, 'som-services');
+renderServices(djs, 'dj-services');
 </script>
 </body>
 </html>
