@@ -1,1 +1,1 @@
-Esse site foi criado com intito de desenvolver sites pra empresas e divlgar produtos e serviços.
+Esse site foi criado com intito aprender e desenvolver sites pra empresas e divlgar produtos e serviços.
