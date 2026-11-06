@@ -295,9 +295,9 @@ footer strong{color:#e6e4ee}
 /* PERSONALIZE ESTES DADOS ANTES DE PUBLICAR O SITE */
 const CONFIG={
  nome:"DJ Ray",
- whatsapp:"32999175329", //DDD + número, somente dígitos
+ whatsapp:"32999175329", // DDI + DDD + número, somente dígitos
  instagram:"https://www.instagram.com/djraysom/",
- telefone:"(032) 99917-5329",
+ telefone:"32 99917-5329",
  email:"",
  pixKey:"eaff8106-57d4-4c07-a9d3-0f775946a810",
  pixCode:"00020101021126580014br.gov.bcb.pix0136eaff8106-57d4-4c07-a9d3-0f775946a8105204000053039865802BR5908RAYTHSON6003UBA62070503***6304AC2A",
@@ -396,7 +396,7 @@ Local coberto: ${dados.get('coberto')}`;
 });
 function saveContact(){
  const phone=(CONFIG.whatsapp||'').replace(/\D/g,'');
- const vcf=['BEGIN:VCARD','VERSION:3.0','FN:'+CONFIG.nome,phone?'TEL;TYPE=CELL:'.concat(phone):'',CONFIG.email?'EMAIL:'+CONFIG.email:'','URL:'+CONFIG.instagram,'NOTE:Aluguel de som, iluminação e serviços de DJ.','END:VCARD'].filter(Boolean).join('\r\n');
+ const vcf=['BEGIN:VCARD','VERSION:3.0','FN:'+CONFIG.nome,phone?'TEL;TYPE=CELL:'.concat(phone):'',CONFIG.email?'EMAIL:'+CONFIG.email:'','URL;TYPE=WORK:http://thson.com.br/','URL;TYPE=HOME:'+CONFIG.instagram,'NOTE:Aluguel de som, iluminação e serviços de DJ.','END:VCARD'].filter(Boolean).join('\r\n');
  const blob=new Blob([vcf],{type:'text/vcard;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
  a.href=url;a.download='contato_dj_ray.vcf';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
